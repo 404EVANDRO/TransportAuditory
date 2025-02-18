@@ -1,32 +1,34 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    padding: 25,
+    padding: width * 0.05, 
     backgroundColor: '#121212',
   },
   title: {
-    fontSize: 24,
+    fontSize: width * 0.06,
     fontWeight: 'bold',
-    marginBottom: 10,
-    marginTop: 20,
+    marginBottom: width * 0.025,
+    marginTop: width * 0.05,
     textAlign: 'center',
     color: '#E0E0E0',
   },
   subtitle: {
-    fontSize: 18,
-    marginBottom: 20,
+    fontSize: width * 0.045,
+    marginBottom: width * 0.05,
     textAlign: 'center',
     color: '#B0B0B0',
   },
   changeButton: {
     backgroundColor: '#00ADB5',
-    padding: 15,
+    padding: width * 0.04,
     borderRadius: 10,
     alignItems: 'center',
-    marginBottom: 20,
-    width: 200,
+    marginBottom: width * 0.05,
+    width: width * 0.8, 
     alignSelf: 'center',
   },
   input: {
@@ -41,31 +43,33 @@ export default StyleSheet.create({
   },
   addButton: {
     backgroundColor: '#7DDA58',
-    padding: 15,
+    padding: width * 0.04,
     borderRadius: 10,
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: width * 0.05,
+    width: width * 0.8,
+    alignSelf: 'center',
   },
   addButtonText: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: width * 0.045,
     fontWeight: 'bold',
   },
   list: {
-    marginTop: 10,
+    marginTop: width * 0.025,
   },
   personItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 15,
+    padding: width * 0.04,
     borderColor: '#ccc',
     backgroundColor: '#1E1E1E',
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: width * 0.025,
   },
   personName: {
-    fontSize: 16,
+    fontSize: width * 0.045,
     color: '#FFF',
   },
   buttonsContainer: {
@@ -73,9 +77,9 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   paymentButton: {
-    padding: 10,
+    padding: width * 0.03,
     borderRadius: 5,
-    marginRight: 10,
+    marginRight: width * 0.025,
   },
   paidButton: {
     backgroundColor: '#28a745',
@@ -85,35 +89,35 @@ export default StyleSheet.create({
   },
   paymentButtonText: {
     color: '#fff',
-    fontSize: 14,
+    fontSize: width * 0.04,
     fontWeight: 'bold',
   },
   deleteButton: {
     backgroundColor: '#ffc107',
-    padding: 10,
+    padding: width * 0.03,
     borderRadius: 5,
   },
   deleteButtonText: {
     color: '#fff',
-    fontSize: 14,
+    fontSize: width * 0.04,
     fontWeight: 'bold',
   },
   monthSelector: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 20,
+    marginTop: width * 0.05,
   },
   monthButton: {
     backgroundColor: '#00ADB5',
-    padding: 15,
+    padding: width * 0.04,
     borderRadius: 10,
     flex: 1,
-    marginHorizontal: 5,
+    marginHorizontal: width * 0.01,
     alignItems: 'center',
   },
   monthButtonText: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: width * 0.045,
     fontWeight: 'bold',
   },
 });
