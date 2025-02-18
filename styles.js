@@ -20,6 +20,15 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: '#B0B0B0',
   },
+  changeButton: {
+    backgroundColor: '#00ADB5',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginBottom: 20,
+    width: 200,
+    alignSelf: 'center',
+  },
   input: {
     height: 50,
     borderColor: '#ccc',
@@ -31,7 +40,7 @@ export default StyleSheet.create({
     backgroundColor: '#1E1E1E',
   },
   addButton: {
-    backgroundColor: '#00ADB5',
+    backgroundColor: '#7DDA58',
     padding: 15,
     borderRadius: 10,
     alignItems: 'center',
